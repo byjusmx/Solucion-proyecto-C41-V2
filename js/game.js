@@ -70,8 +70,8 @@ class Game{
                     
                          textSize(25);
                          fill("white");
-                         text("Player 1 :" +allPlayers.player1.score,50,50);
-                        text("Player 2 :" + allPlayers.player2.score, 50, 100);
+                         text("Jugador 1 :" +allPlayers.player1.score,50,50);
+                        text("Jugador 2 :" + allPlayers.player2.score, 50, 100);
                  
                  }
                 
@@ -146,17 +146,17 @@ class Game{
 
     
                 showRank() {
-                    alert("Awesome !! You finished the game! You rank is :" +player.rank)
+                    alert("¡Impresionante! ¡Terminaste el juego! Tu posición es:" +player.rank)
                   }
 
                   gameOver() {
                     textSize(40)
                     fill("white")
-                    text("GAME OVER",displayWidth/2-400,displayHeight/2-200)
+                    text("FIN DEL JUEGO",displayWidth/2-400,displayHeight/2-200)
                     }
     
     end(){
-       console.log("Game Ended");
+       console.log("Juego terminado");
        console.log(player.rank)
        this.gameOver();
     }
